@@ -1,0 +1,16 @@
+# Ignore build output
+bin/
+obj/
+
+# User-specific files
+.vs/
+*.user
+*.suo
+
+# Ignore compiled files
+*.exe
+*.pdb
+
+# Other Visual Studio generated files
+*.cache
+*.idx
