@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace Homeworke3
 {
-    internal class Class1
+    internal class Point
     {
+        public int x; 
+        public int y;
+
+        public double distance(int x,int y)
+        {
+            return Math.Sqrt(Math.Pow((this.x - x),2) + Math.Pow((this.y - y), 2));
+        }
+
+        public double distance()
+        {
+            return distance(0, 0);
+        }
+
+        public double distance(Point p)
+        {
+            return distance(p.x, p.y);
+        }
     }
 }
