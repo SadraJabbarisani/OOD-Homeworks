@@ -15,27 +15,29 @@ namespace Homeworke3
         int height, width;
         Graphics grc;
 
-        public ShowingArea(Graphics grc, Panel showingPNL)
+        public ShowingArea(Panel showingPNL)
         {
-            this.grc = grc;
+            grc = showingPNL.CreateGraphics();
             height = showingPNL.Height;
             width = showingPNL.Width;
+            PointList = new ArrayList();
         }
         
         public void add (Point p)
         {
             PointList.Add(p);
+            reDrawAll();
         }
 
-        public void reDrawAll()
+        private void reDrawAll()
         {
             int x, y;
-            int diameter = 2;
+            int diameter = 20;
             Brush brush = new SolidBrush(Color.Red);
             foreach (Point p in PointList)
             {
-                x = (width / 2) + (p.x * (width / 20));
-                y = (height/ 2) - (p.y * (height/ 20));
+                x = (int)((width / 2) + (p.x * (width / 21)));
+                y = (int)((height/ 2) - (p.y * (height/ 21)));
 
                 x -= diameter/2;
                 y -= diameter/2;

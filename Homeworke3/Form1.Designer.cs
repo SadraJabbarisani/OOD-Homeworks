@@ -57,7 +57,6 @@
             this.xTextBox.Name = "xTextBox";
             this.xTextBox.Size = new System.Drawing.Size(100, 44);
             this.xTextBox.TabIndex = 1;
-            this.xTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -80,7 +79,6 @@
             this.label3.Size = new System.Drawing.Size(66, 37);
             this.label3.TabIndex = 4;
             this.label3.Text = "Y : ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // yTextBox
             // 
@@ -89,7 +87,6 @@
             this.yTextBox.Name = "yTextBox";
             this.yTextBox.Size = new System.Drawing.Size(100, 44);
             this.yTextBox.TabIndex = 3;
-            this.yTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // addBTN
             // 
@@ -100,6 +97,7 @@
             this.addBTN.TabIndex = 5;
             this.addBTN.Text = "Add";
             this.addBTN.UseVisualStyleBackColor = true;
+            this.addBTN.Click += new System.EventHandler(this.addBTN_Click);
             // 
             // label4
             // 
@@ -127,6 +125,8 @@
             // 
             this.graph.BackColor = System.Drawing.Color.Silver;
             this.graph.BackgroundImage = global::Homeworke3.Properties.Resources.background;
+            this.graph.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.graph.Cursor = System.Windows.Forms.Cursors.Default;
             this.graph.Location = new System.Drawing.Point(27, 277);
             this.graph.Name = "graph";
             this.graph.Size = new System.Drawing.Size(813, 803);
