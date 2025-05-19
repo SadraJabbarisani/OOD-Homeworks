@@ -11,6 +11,23 @@ namespace Homeworke3
         public int x; 
         public int y;
 
+        public Point ()
+        {
+
+        }
+
+        public Point (int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        public Point (Point p)
+        {
+            this.x = p.x;
+            this.y = p.y;
+        }
+
         public double distance(int x,int y)
         {
             return Math.Sqrt(Math.Pow((this.x - x),2) + Math.Pow((this.y - y), 2));
