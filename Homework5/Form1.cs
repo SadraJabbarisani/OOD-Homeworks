@@ -38,17 +38,13 @@ namespace Homeworke3
                 {
                     showingArea.clear();
 
-                    p1 = new Point();
-                    p1.x = int.Parse(xTextBox.Text);
-                    p1.y = int.Parse(yTextBox.Text);
+                    p1 = new Point(int.Parse(xTextBox.Text), int.Parse(yTextBox.Text));
 
                     showingArea.add(p1);
                 }
                 else
                 {
-                    p2 = new Point();
-                    p2.x = int.Parse(xTextBox.Text);
-                    p2.y = int.Parse(yTextBox.Text);
+                    p2 = new Point(int.Parse(xTextBox.Text), int.Parse(yTextBox.Text));
 
                     showingArea.add(p2);
 

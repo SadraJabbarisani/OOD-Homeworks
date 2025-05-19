@@ -24,9 +24,7 @@ namespace Homeworke3
             width = showingPNL.Width;
             panel = showingPNL;
 
-            centerPoint = new Point();
-            centerPoint.x = width/2;
-            centerPoint.y = height/2;
+            centerPoint = new Point(width / 2, height / 2);
 
             PointList = new ArrayList();
 
@@ -75,9 +73,7 @@ namespace Homeworke3
                 centerPoint.x + ((p2.x) * (width / 21)),
                 centerPoint.y - ((p2.y) * (height / 21))
                 );
-            pc = new Point();
-            pc.x = (p1.x + p2.x) / 2;
-            pc.y = (p1.y + p2.y) / 2;
+            pc = new Point((p1.x + p2.x) / 2, (p1.y + p2.y) / 2);
                 grc.DrawString(
                     p1.distance(p2).ToString("F2"),
                     Tfont, Tbrush,
